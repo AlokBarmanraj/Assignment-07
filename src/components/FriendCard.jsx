@@ -16,7 +16,7 @@ const FriendCard = ({ friend }) => {
   };
   return (
     <Link href={`/friend/${id}`}>
-      <div className="bg-white border border-gray-200 p-8 rounded-xl text-center space-y-1">
+      <div className="bg-white border border-gray-200 p-8 rounded-xl text-center space-y-1 shadow-2xl">
         <div>
           <Image
             src={picture}
