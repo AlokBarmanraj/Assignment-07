@@ -4,7 +4,7 @@ import { FaSquareFacebook, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#244D3F]">
+    <footer className="bg-[#244D3F] mt-10 md:mt-16 lg:mt-20">
       <div className="w-11/12 mx-auto">
         <div className="flex justify-center items-center text-center p-16">
           <div className="space-y-3">
