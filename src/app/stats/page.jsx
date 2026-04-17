@@ -32,7 +32,7 @@ const StatsPage = () => {
 
   return (
     <div className="w-9/12 mx-auto mt-20">
-        <h1 className="font-bold text-6xl">Friendship Analytics</h1>
+      <h1 className="font-bold text-6xl">Friendship Analytics</h1>
       <div className="bg-gray-100 p-5 rounded-lg mt-10">
         <h1 className="text-3xl font-bold mb-6">By Interaction Type</h1>
 

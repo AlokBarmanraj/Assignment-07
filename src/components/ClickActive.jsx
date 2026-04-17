@@ -16,14 +16,14 @@ const ClickActive = ({ name }) => {
     const existing = JSON.parse(sessionStorage.getItem("timeline")) || [];
 
     sessionStorage.setItem("timeline", JSON.stringify([...existing, newEvent]));
-    toast.success(`${type.toUpperCase()} successfully! ✅`);
+    toast.success(`${name} ${type.toUpperCase()} successfully! ✅`);
   };
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <div
         onClick={() => handleAction("call")}
-        className="bg-gray-100 rounded-lg p-6 text-center cursor-pointer"
+        className="bg-gray-200 rounded-lg p-6 text-center cursor-pointer hover:bg-gray-300"
       >
         <h2 className="font-bold text-xl flex flex-col items-center gap-2">
           <IoCall />
@@ -34,7 +34,7 @@ const ClickActive = ({ name }) => {
 
       <div
         onClick={() => handleAction("text")}
-        className="bg-gray-100 rounded-lg p-6 text-center cursor-pointer"
+        className="bg-gray-200 rounded-lg p-6 text-center cursor-pointer hover:bg-gray-300"
       >
         <h2 className="font-bold text-xl flex flex-col items-center gap-2">
           <IoMdText />
@@ -44,7 +44,7 @@ const ClickActive = ({ name }) => {
 
       <div
         onClick={() => handleAction("video")}
-        className="bg-gray-100 rounded-lg p-6 text-center cursor-pointer"
+        className="bg-gray-200 rounded-lg p-6 text-center cursor-pointer hover:bg-gray-300"
       >
         <h2 className="font-bold text-xl flex flex-col items-center gap-2">
           <IoVideocam />
