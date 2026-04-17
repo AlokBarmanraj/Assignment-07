@@ -1,3 +1,4 @@
+import ClickActive from "@/components/ClickActive";
 import Image from "next/image";
 import React from "react";
 import { FaArchive } from "react-icons/fa";
@@ -35,6 +36,7 @@ const FriendDetails = async ({ params }) => {
       return "bg-[#244D3F] text-white";
     }
   };
+
   return (
     <div className="w-full px-5 lg:w-9/12 mx-auto mt-10 lg:mt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:grid-rows-7 gap-5">
@@ -139,8 +141,8 @@ const FriendDetails = async ({ params }) => {
             Quick Check-In
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-gray-100 rounded-lg p-6 text-center">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="bg-gray-100 rounded-lg p-6 text-center cursor-pointer">
               <h2 className="font-bold text-xl flex flex-col items-center gap-2">
                 <IoCall />
                 Call
@@ -160,7 +162,9 @@ const FriendDetails = async ({ params }) => {
                 Video
               </h2>
             </div>
-          </div>
+          </div> */}
+
+          <ClickActive name={name}></ClickActive>
         </div>
       </div>
     </div>
