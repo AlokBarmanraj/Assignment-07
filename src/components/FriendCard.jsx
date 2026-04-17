@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
 
 const FriendCard = ({ friend }) => {
   const { id, picture, name, days_since_contact, tags, status } = friend;

@@ -1,10 +1,7 @@
 import ClickActive from "@/components/ClickActive";
 import Image from "next/image";
-import React from "react";
 import { FaArchive } from "react-icons/fa";
 import { HiMiniBellSnooze } from "react-icons/hi2";
-import { IoMdText } from "react-icons/io";
-import { IoCall, IoVideocam } from "react-icons/io5";
 import { RiDeleteBin5Line } from "react-icons/ri";
 
 const FriendDetails = async ({ params }) => {
@@ -140,29 +137,6 @@ const FriendDetails = async ({ params }) => {
           <h2 className="text-xl md:text-2xl text-[#244D3F] mb-6">
             Quick Check-In
           </h2>
-
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-gray-100 rounded-lg p-6 text-center cursor-pointer">
-              <h2 className="font-bold text-xl flex flex-col items-center gap-2">
-                <IoCall />
-                Call
-              </h2>
-            </div>
-
-            <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <h2 className="font-bold text-xl flex flex-col items-center gap-2">
-                <IoMdText />
-                Text
-              </h2>
-            </div>
-
-            <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <h2 className="font-bold text-xl flex flex-col items-center gap-2">
-                <IoVideocam />
-                Video
-              </h2>
-            </div>
-          </div> */}
 
           <ClickActive name={name}></ClickActive>
         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import FriendCard from "../../components/FriendCard";
 
 const FriendsData = async () => {

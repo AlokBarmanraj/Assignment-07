@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = () => {
   return (
     <div className="pt-10 md:pt-16 lg:pt-20">

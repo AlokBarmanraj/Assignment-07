@@ -2,6 +2,7 @@
 
 import { IoCall, IoVideocam } from "react-icons/io5";
 import { IoMdText } from "react-icons/io";
+import { toast } from "react-toastify";
 
 const ClickActive = ({ name }) => {
   const handleAction = (type) => {
@@ -15,6 +16,7 @@ const ClickActive = ({ name }) => {
     const existing = JSON.parse(sessionStorage.getItem("timeline")) || [];
 
     sessionStorage.setItem("timeline", JSON.stringify([...existing, newEvent]));
+    toast.success(`${type.toUpperCase()} successfully! ✅`);
   };
 
   return (
@@ -27,6 +29,7 @@ const ClickActive = ({ name }) => {
           <IoCall />
           Call
         </h2>
+        
       </div>
 
       <div
